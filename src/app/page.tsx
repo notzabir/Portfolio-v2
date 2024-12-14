@@ -259,8 +259,8 @@ export default function AmongUsSpace() {
         </div>
 
         {/* right div parent container */}
-        <div className="absolute h-[200px] w-full lg:pl-[800px] g:pb-0 sm:pb-[840px] xs:pb-[870px] xs:pl-[16px]" >
-        <ul className="flex lg:space-x-14 sm:space-x-14 xs:space-x-10 lg:text-5xl sm:text-3xl lg:pt-[28px] font-amatic sm:pl-[120px] lg:pl-0">
+        <div className="absolute h-[200px] w-full lg:pl-[800px] g:pb-0 sm:pb-[840px] xs:pb-[820px] xs:pl-[16px]" >
+        <ul className="flex lg:space-x-14 sm:space-x-14 xs:space-x-6 xs:pl-[25px] xs:text-lg lg:text-5xl sm:text-3xl lg:pt-[28px] font-amatic sm:pl-[120px] lg:pl-0">
           <li className="hover:text-blue-400 text-white cursor-pointer" onMouseEnter={handleMouseEnter}
           onClick={handleClick}>Home</li>
           <li className="hover:text-blue-400 text-white cursor-pointer" onMouseEnter={handleMouseEnter}
