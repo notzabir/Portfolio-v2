@@ -8,9 +8,27 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        shake: {
+          "0%": { transform: "translateY(0)" },
+          "25%": { transform: "translateY(-10px)" },
+          "50%": { transform: "translateY(0)" },
+          "75%": { transform: "translateY(10px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        shake: "shake 4s ease-in-out infinite",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        amatic: ['AmaticSC', 'sans-serif'],
+      },
+      screens: {
+        xs: '300px',
       },
     },
   },
