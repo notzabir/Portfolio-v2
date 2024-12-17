@@ -188,9 +188,9 @@ export default function AmongUsSpace() {
         {/* left div parent container */}
         <div className=" lg:h-full sm:h-full  lg:w-2/3 sm:w-full xs:h-full xs:w-full lg:mt-0 sm:mt-[0px] relative z-30">
         <div className="absolute h-full w-full lg:pt-[200px] sm:pt-[50px] xs:pt-[20px] lg:pl-[100px] sm:pl-[160px] xs:pl-[20px]">
-          <h1 className="lg:text-8xl sm:text-5xl xs:text-4xl lg:pl-0 sm:pl-[80px] xs:pl-[60px] font-amatic text-white">Hello, I&apos;m</h1>
-          <h2 className="lg:text-9xl sm:text-6xl xs:text-5xl font-amatic text-white">Md Ahnaf Al Zabir</h2>
-          <h3 className="lg:text-8xl sm:text-5xl xs:text-4xl font-amatic text-white lg:pl-0 sm:pl-[25px] xs:pl-[20px]">
+          <h1 className="lg:text-8xl sm:text-5xl xs:text-4xl lg:pl-0 sm:pl-[80px] xs:flex xs:justify-center font-amatic text-white">Hello, I&apos;m</h1>
+          <h2 className="lg:text-9xl sm:text-6xl xs:text-5xl xs:flex xs:justify-center font-amatic text-white">Md Ahnaf Al Zabir</h2>
+          <h3 className="lg:text-8xl sm:text-5xl xs:text-4xl xs:flex xs:justify-center font-amatic text-white lg:pl-0 sm:pl-[25px] xs:pl-[20px]">
           <ReactTyped
           strings={['I\'m a CS Freshman', 'An Aspiring SWE']}
           typeSpeed={100} // Typing speed
@@ -221,7 +221,7 @@ export default function AmongUsSpace() {
         {/* Container for the icons */}
 
 
-        <div className="flex space-x-12 lg:pt-10 sm:pt-5 xs:pt-3 sm:pl-[32px] xs:pl-[14px] lg:pl-24 w-full">
+        <div className="flex space-x-12 lg:pt-10 sm:pt-5 xs:pt-3 sm:pl-[32px] xs:flex xs:justify-center lg:pl-24 w-full">
         <a
           href="https://linkedin.com/in/md-ahnaf-al-zabir"
           target="_blank"
@@ -259,7 +259,7 @@ export default function AmongUsSpace() {
         </div>
 
         {/* right div parent container */}
-        <div className="absolute h-[200px] w-full lg:pl-[800px] g:pb-0 sm:pb-[840px] xs:pb-[820px] xs:pl-[16px]" >
+        <div className="absolute h-[200px] w-full lg:pl-[800px] g:pb-0 sm:pb-[840px] xs:pb-[840px] xs:flex xs:justify-center" >
         <ul className="flex lg:space-x-14 sm:space-x-14 xs:space-x-6 xs:pl-[25px] xs:text-lg lg:text-5xl sm:text-3xl lg:pt-[28px] font-amatic sm:pl-[120px] lg:pl-0">
           <li className="hover:text-blue-400 text-white cursor-pointer" onMouseEnter={handleMouseEnter}
           onClick={handleClick}>Home</li>
@@ -275,7 +275,7 @@ export default function AmongUsSpace() {
         </ul>
         </div>
 
-        <div className="lg:pt-36 lg:pr-24 sm:pt-[120px] xs:pt-[60px] lg:pl-0 sm:pl-[150px] xs:pl-[20px]">
+        <div className="lg:pt-36 lg:pr-24 sm:pt-[120px] xs:pt-[150px] lg:pl-0 sm:pl-[150px] xs:flex xs:justify-center">
           <Image src={Ahnaf} 
           alt="pic"
           style={{
@@ -584,7 +584,7 @@ export default function AmongUsSpace() {
           
 
           {/* Spaceship */}
-          <div className="absolute w-full h-full lg:pl-48 sm:pl-0 lg:pt-0 sm:pt-0 xs:pt-[450px] z-10 animate-shake">
+          <div className="absolute w-full h-full lg:pl-48 sm:pl-0 lg:pt-0 sm:pt-0 xs:flex xs:items-center z-10 animate-shake">
             <Image
               src={Spaceship}
               alt="Spaceship"
