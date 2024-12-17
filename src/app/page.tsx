@@ -44,7 +44,18 @@ export default function AmongUsSpace() {
       delay: 20,
     },
   ];
+  
+  
+   {/*} const [nav, setNav] = useState(false);
 
+    const handleNav = () => {
+      setNav(!nav)
+    }
+
+    const closeNav = () => {
+      setNav(false)
+    } */}
+ 
 
   
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -190,7 +201,7 @@ export default function AmongUsSpace() {
         <div className="absolute h-full w-full lg:pt-[200px] sm:pt-[50px] xs:pt-[20px] lg:pl-[100px] sm:pl-[160px] xs:pl-[20px]">
           <h1 className="lg:text-8xl sm:text-5xl xs:text-4xl lg:pl-0 sm:pl-[80px] xs:flex xs:justify-center lg:justify-normal font-amatic text-white">Hello, I&apos;m</h1>
           <h2 className="lg:text-9xl sm:text-6xl xs:text-5xl xs:flex xs:justify-center lg:justify-normal font-amatic text-white">Md Ahnaf Al Zabir</h2>
-          <h3 className="lg:text-8xl sm:text-5xl xs:text-4xl xs:flex xs:justify-center lg:justify-normal font-amatic text-white lg:pl-0 sm:pl-[25px] xs:pl-[20px]">
+          <h3 className="lg:text-8xl sm:text-5xl xs:text-4xl xs:flex xs:justify-center lg:justify-normal font-amatic text-white lg:pl-0 sm:pl-[25px] ">
           <ReactTyped
           strings={['I\'m a CS Freshman', 'An Aspiring SWE']}
           typeSpeed={100} // Typing speed
@@ -200,7 +211,7 @@ export default function AmongUsSpace() {
           loop={true} // Loop the typing effect
         />
          </h3>
-         <div className="flex flex-row space-x-8 lg:pl-12 sm:pl-4 xs:flex xs:justify-center lg:justify-normal lg:pr-0 sm:pr-0 lg:pt-8 sm:pt-4  xs:pt-2 z-40">
+         <div className="flex flex-row space-x-8 lg:pl-12 sm:pl-4 xs:pl-flex xs:justify-center lg:justify-normal lg:pr-0 sm:pr-0 lg:pt-8 sm:pt-4  xs:pt-2 z-40">
          <button
           onMouseEnter={handleMouseEnter}
           className="lg:px-8 sm:px-4 lg:py-3 sm:py-1 bg-transparent border-2 border-white text-white rounded-lg font-amatic text-3xl tracking-wider transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] hover:scale-105"
@@ -221,7 +232,7 @@ export default function AmongUsSpace() {
         {/* Container for the icons */}
 
 
-        <div className="flex space-x-12 lg:pt-10 sm:pt-5 xs:pt-3 sm:pl-[32px] xs:flex xs:justify-center lg:justify-normal lg:pl-24 w-full">
+        <div className="flex space-x-12 lg:pt-10 sm:pt-5 xs:pt-3 sm:pl-[32px] lg:justify-normal xs:flex xs:justify-center lg:pl-24 w-full">
         <a
           href="https://linkedin.com/in/md-ahnaf-al-zabir"
           target="_blank"
@@ -259,7 +270,7 @@ export default function AmongUsSpace() {
         </div>
 
         {/* right div parent container */}
-        <div className="absolute h-[200px] w-full lg:pl-[800px] g:pb-0 sm:pb-[840px] xs:pb-[840px] xs:flex xs:justify-center" >
+        <div className="absolute h-[200px] w-full lg:pl-[800px] lg:pb-0 sm:pb-[840px] xs:pb-[840px] xs:flex xs:justify-center" >
         <ul className="flex lg:space-x-14 sm:space-x-14 xs:space-x-6 xs:pl-[25px] xs:text-lg lg:text-5xl sm:text-3xl lg:pt-[28px] font-amatic sm:pl-[120px] lg:pl-0">
           <li className="hover:text-blue-400 text-white cursor-pointer" onMouseEnter={handleMouseEnter}
           onClick={handleClick}>Home</li>
@@ -338,7 +349,7 @@ export default function AmongUsSpace() {
             </svg>
           </div>
         ))}
-                <div className="">
+                <div className="xs:flex xs:justify-center lg:flex-none lg:justify-normal">
                 <button className="z-20 absolute  lg:ml-[550px] sm:ml-[170px] lg:px-8 sm:px-4 lg:py-3 sm:py-1 bg-transparent border-2 border-white text-white rounded-lg font-['VT323',monospace] text-5xl tracking-wider transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] hover:scale-105">
                  Experience
                 </button>
@@ -644,4 +655,5 @@ export default function AmongUsSpace() {
     
   );
 }
+
 
