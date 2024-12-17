@@ -130,7 +130,7 @@ export default function ProjectsPage() {
       {/* Navbar */}
 
 <div className="absolute h-[200px] w-full lg:pl-[800px] z-30">
-        <ul className="flex space-x-14 lg:text-5xl sm:text-2xl lg:pt-[28px] font-amatic lg:pl-0 sm:pl-[120px] sm:pt-[25px]">
+        <ul className="flex space-x-14 lg:text-5xl sm:text-2xl lg:pt-[28px] font-amatic lg:pl-0 sm:pl-[120px] sm:pt-[25px] xs:flex xs:justify-center">
           <li className="hover:text-blue-400 text-white cursor-pointer" onMouseEnter={handleMouseEnter}
           onClick={handleClick}>
             <Link href="/">Home</Link></li>
