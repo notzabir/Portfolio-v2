@@ -188,9 +188,9 @@ export default function AmongUsSpace() {
         {/* left div parent container */}
         <div className=" lg:h-full sm:h-full  lg:w-2/3 sm:w-full xs:h-full xs:w-full lg:mt-0 sm:mt-[0px] relative z-30">
         <div className="absolute h-full w-full lg:pt-[200px] sm:pt-[50px] xs:pt-[20px] lg:pl-[100px] sm:pl-[160px] xs:pl-[20px]">
-          <h1 className="lg:text-8xl sm:text-5xl xs:text-4xl lg:pl-0 sm:pl-[80px] xs:flex xs:justify-center font-amatic text-white">Hello, I&apos;m</h1>
-          <h2 className="lg:text-9xl sm:text-6xl xs:text-5xl xs:flex xs:justify-center font-amatic text-white">Md Ahnaf Al Zabir</h2>
-          <h3 className="lg:text-8xl sm:text-5xl xs:text-4xl xs:flex xs:justify-center font-amatic text-white lg:pl-0 sm:pl-[25px] xs:pl-[20px]">
+          <h1 className="lg:text-8xl sm:text-5xl xs:text-4xl lg:pl-0 sm:pl-[80px] xs:flex xs:justify-center lg:justify-normal font-amatic text-white">Hello, I&apos;m</h1>
+          <h2 className="lg:text-9xl sm:text-6xl xs:text-5xl xs:flex xs:justify-center lg:justify-normal font-amatic text-white">Md Ahnaf Al Zabir</h2>
+          <h3 className="lg:text-8xl sm:text-5xl xs:text-4xl xs:flex xs:justify-center lg:justify-normal font-amatic text-white lg:pl-0 sm:pl-[25px] xs:pl-[20px]">
           <ReactTyped
           strings={['I\'m a CS Freshman', 'An Aspiring SWE']}
           typeSpeed={100} // Typing speed
@@ -200,7 +200,7 @@ export default function AmongUsSpace() {
           loop={true} // Loop the typing effect
         />
          </h3>
-         <div className="flex flex-row space-x-8 lg:pl-12 sm:pl-4 xs:pl-[20px] lg:pr-0 sm:pr-0 lg:pt-8 sm:pt-4  xs:pt-2 z-40">
+         <div className="flex flex-row space-x-8 lg:pl-12 sm:pl-4 xs:flex xs:justify-center lg:justify-normal lg:pr-0 sm:pr-0 lg:pt-8 sm:pt-4  xs:pt-2 z-40">
          <button
           onMouseEnter={handleMouseEnter}
           className="lg:px-8 sm:px-4 lg:py-3 sm:py-1 bg-transparent border-2 border-white text-white rounded-lg font-amatic text-3xl tracking-wider transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] hover:scale-105"
@@ -221,7 +221,7 @@ export default function AmongUsSpace() {
         {/* Container for the icons */}
 
 
-        <div className="flex space-x-12 lg:pt-10 sm:pt-5 xs:pt-3 sm:pl-[32px] xs:flex xs:justify-center lg:pl-24 w-full">
+        <div className="flex space-x-12 lg:pt-10 sm:pt-5 xs:pt-3 sm:pl-[32px] xs:flex xs:justify-center lg:justify-normal lg:pl-24 w-full">
         <a
           href="https://linkedin.com/in/md-ahnaf-al-zabir"
           target="_blank"
