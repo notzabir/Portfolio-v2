@@ -411,10 +411,10 @@ export default function AmongUsSpace() {
               <h1 className="lg:text-4xl sm:text-4xl xs:text-lg font-['VT323', monospace]">{cards[currentIndex].title}</h1>
               <h2 className="text-xl font-['VT323', monospace] text-white/95">
                 {/* You can change the text below for each card */}
-                {cards[currentIndex].title === "AIM Projects" ? "Projects Mentee" : ""}
+                {cards[currentIndex].title === "AIM Projects" ? "Software Developer" : ""}
                 {cards[currentIndex].title === "MLIS Nutrition Club" ? "Vice President" : ""}
                 {cards[currentIndex].title === "Proborton Foundation" ? "Volunteer" : ""}
-                {cards[currentIndex].title === "Buildspace NW S5" ? "Mentee" : ""}
+                {cards[currentIndex].title === "Buildspace NW S5" ? "Software Developer" : ""}
                 {cards[currentIndex].title === "MLIS Robotics Club" ? "Teaching Assistant" : ""}
               </h2>
               <h3 className="lg:text-lg sm:text-lg xs:text-sm font=['VT323', monospace] text-white/90">
