@@ -8,7 +8,7 @@ import Spaceship from "../assets/Lobbyimg.png";
 import { Github, Linkedin, Instagram, MessageCircle, X, Send} from "lucide-react";
 import Ahnaf from "../assets/pfp.png";
 import { motion, AnimatePresence } from "framer-motion";
-import utdfintech from "../assets/utdfintech.jfif"
+import utdfintech from "../assets/fintech.png"
 import utdais from "../assets/utdais.png"
 import mlisnutri from "../assets/mlisnutri.jpg"
 import proborton from "../assets/probortonfound.jpg"
