@@ -81,28 +81,33 @@ export default function AmongUsSpace() {
   
   const [currentIndex, setCurrentIndex] = useState(0);
   const cards = [
-    {
+     {
       id: 1,
+      image: utdfintech,
+      title: "FinTech Projects",
+    },
+    {
+      id: 2,
       image: utdais,
       title: "AIM Projects",
     },
     {
-      id: 2,
+      id: 3,
       image: mlisnutri,
       title: "MLIS Nutrition Club",
     },
     {
-      id: 3,
+      id: 4,
       image: proborton,
       title: "Proborton Foundation",
     },
     {
-      id: 4,
+      id: 5,
       image: buildspace,
       title: "Buildspace NW S5",
     },
     {
-      id: 5,
+      id: 6,
       image: robotics,
       title: "MLIS Robotics Club",
     },
@@ -411,6 +416,7 @@ export default function AmongUsSpace() {
               <h1 className="lg:text-4xl sm:text-4xl xs:text-lg font-['VT323', monospace]">{cards[currentIndex].title}</h1>
               <h2 className="text-xl font-['VT323', monospace] text-white/95">
                 {/* You can change the text below for each card */}
+                {cards[currentIndex].title === "FinTech Projects" ? "Full-Stack Developer" : ""}
                 {cards[currentIndex].title === "AIM Projects" ? "Software Developer" : ""}
                 {cards[currentIndex].title === "MLIS Nutrition Club" ? "Vice President" : ""}
                 {cards[currentIndex].title === "Proborton Foundation" ? "Volunteer" : ""}
@@ -418,6 +424,7 @@ export default function AmongUsSpace() {
                 {cards[currentIndex].title === "MLIS Robotics Club" ? "Teaching Assistant" : ""}
               </h2>
               <h3 className="lg:text-lg sm:text-lg xs:text-sm font=['VT323', monospace] text-white/90">
+                {cards[currentIndex].title == "FinTech Projects" ? "March 2025 - May 2025 " : ""}
                 {cards[currentIndex].title == "AIM Projects" ? "Sept 2024 - Dec 2024 " : ""}
                 {cards[currentIndex].title == "MLIS Nutrition Club" ? "Sept 2023 - Aug 2024 " : ""}
                 {cards[currentIndex].title == "Proborton Foundation" ? "Jul 2021 - Mar 2022 " : ""}
@@ -427,6 +434,7 @@ export default function AmongUsSpace() {
               </h3>
               <p className="text-white/90 lg:text-base sm:text-md xs:text-xs  pt-6">
                 {/* You can add a description here for each card */}
+                {cards[currentIndex].title === "FinTech Projects" && "Built an ML pipeline to forecast real estate prices using TF-IDF and DistilBERT sentiment analysis on news data (NewsAPI, NYT). Engineered features for ARIMA, Linear Regression, and Gradient Boosting models, with 10-year forecasts visualized via Matplotlib and Gemini-Pro. Developed an NLP-powered voice agent for real-time investment advice and financial data queries. Won 1st place at FinTech Projects Spring 2025, earning $500 in funding."}
                 {cards[currentIndex].title === "AIM Projects" && "Developed an ASL detector using Python with OpenCV and Keras (TensorFlow) for the CNN architecture. Collaborated in a team of five under a project mentor, contributing to the dynamic frontend integration of the CNN model using React, Tailwind CSS, and tsparticles. This project secured 2nd place at AIM Projects 2024."}
                 {cards[currentIndex].title === "MLIS Nutrition Club" && "Led the coordination of large-scale events, including Nutri-Fest 2.0 and the National Nutrition Olympiad school delegation, engaging 200+ students. Spearheaded outreach and marketing campaigns, reaching over 500 students to boost participation. Successfully networked with influencers and special guests to enhance event visibility and engagement."} 
                 {cards[currentIndex].title === "Proborton Foundation" && "Coordinated weekly hybrid classes for 25 underprivileged children, teaching primary-level Math and English. Highlighted the importance of community service by creating and sharing a video to raise awareness about breaking stigmas around underprivileged children's lifestyles for the Iowa State University I-Fit Challenge 2021."}
